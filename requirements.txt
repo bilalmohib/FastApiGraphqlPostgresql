@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+sqlmodel
+sqlalchemy
+psycopg2
+python-dotenv
+strawberry-graphql[fastapi]
+asyncpg
+
+ 
