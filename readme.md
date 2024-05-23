@@ -1,6 +1,6 @@
-# Learning FastAPI with Strawberry GraphQL, SQLModel and Postgres
+# FastAPI with Strawberry GraphQL, SQLModel and Postgres
 
-Welcome to the **Learning FastAPI with Strawberry GraphQL** project! This project is designed to showcase a robust implementation of FastAPI integrated with Strawberry GraphQL, providing a seamless experience for building high-performance web applications with asynchronous capabilities.
+Welcome to the **FastAPI with Strawberry GraphQL, SQLModel and Postgres** project! This project is designed to showcase a robust implementation of FastAPI integrated with Strawberry GraphQL, providing a seamless experience for building high-performance web applications with asynchronous capabilities.
 
 ## Project Overview
 This project demonstrates the integration of FastAPI with Strawberry GraphQL to create a modern, scalable, and efficient web application. The application includes a sample GraphQL schema with queries and mutations, database management, and a simple FastAPI endpoint. The project also includes a PostgreSQL database for storing data and SQLModel for defining database models.
