@@ -70,46 +70,58 @@ To access the GraphQL Playground, navigate to `[http://localhost:8888/graphql](h
 ## Sample Queries and Mutations
 Here are some sample queries and mutations that you can try in the GraphQL Playground:
 
-#### GET
-1. Query to get all Notes
-```graphql
-query GetAllNotes{
-  getAll{
-    id
-    name
-  }
-}
-```
+1. #### POST
+    Mutation to create a new Note:
+    ```graphql
+    mutation MyMutation {
+      createNote(noteData: {
+        name: "This is summer", 
+        description: "This is the summer in 2024 and we are burning with code"
+      })
+    }
+    ```
+    <!-- Load image from the ReadmeData/POST.png -->
+    ![POST](ReadmeData/POST.png)
 
-#### POST
-2. Mutation to create a new Note:
-mutation {
-  createNote(noteData: { name: "Lets start coding today", descripiton: "Coding makes you enterpreneur" }) {
-    id
-    description
-    content
-  }
-}
+2. #### GET
+    Query to get all Notes
+    ```graphql
+    query MyQuery {
+      getAll {
+        description
+        id
+        name
+      }
+    }
+    ```
+    <!-- Load image from the ReadmeData/GET.png -->
+    ![GET](ReadmeData/GET.png)
 
-## PUT
-3. Update a Note:
-mutation {
-  updateNote(noteId: 1, noteData: { name: "Lets start coding today", descripiton: "Coding makes you enterpreneur" }) {
-    id
-    description
-    content
-  }
-}
+3. ## PUT
+    Update a Note:
+    ```graphql
+    mutation UpdateNoteMutation {
+      updateNote(
+        noteData: {
+          name: "This is updated", 
+          description: "Description also updated"
+        }
+        noteId: 2
+      )
+    }
+    ```
+    <!-- Load image from the ReadmeData/PUT.png -->
+    ![PUT](ReadmeData/PUT.png)
 
-## DELETE
-4. Delete a Note:
-mutation {
-  deleteNote(noteId: 1) {
-    id
-    description
-    content
-  }
-}
+4. ## DELETE
+    Delete a Note:
+    ```graphql
+    mutation DeleteNoteMutation {
+      deleteNote(noteId: 2)
+    }
+    ```
+    <!-- Load image from the ReadmeData/DELETE.png -->
+    ![DELETE](ReadmeData/DELETE.png)
 
 ## Conclusion
 This project provides a solid foundation for building web applications with FastAPI and Strawberry GraphQL. By leveraging the power of Python's type hints and asynchronous capabilities, developers can create high-performance APIs with ease. The integration of SQLModel and PostgreSQL further enhances the application's database interactions, making it a robust solution for modern web development.
